@@ -31,7 +31,9 @@ llm = ChatGroq(model_name="llama-3.1-8b-instant")
 
 qa_chain = RetrievalQA.from_chain_type(
     llm=llm,
-    retriever=vectorstore.as_retriever(search_kwargs={"k":3}),
+    retriever=vectorstore.as_retriever( 
+        search_type="similarity",
+        search_kwargs={"k":4}),
     return_source_documents=True,
 )
 
