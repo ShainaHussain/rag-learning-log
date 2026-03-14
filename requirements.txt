@@ -1,7 +1,10 @@
-langchain
+langchain==0.1.17
 langchain-community
-pypdf
-chromadb
+langchain-text-splitters
 langchain-chroma
 langchain-huggingface
+langchain-groq
+chromadb
 sentence-transformers
+pypdf
+python-dotenv
